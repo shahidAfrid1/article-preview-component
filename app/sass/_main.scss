@@ -1,0 +1,199 @@
+main {
+  width: 100vw;
+  max-height: 100vh;
+  background-color: $GrayishBlue;
+
+  .card {
+    position: relative;
+    width: 87.123vw;
+    height: 137.212vw;
+    margin: 21.315% 0;
+    background-color: white;
+    border-radius: 4vw;
+    @media (min-width: 650px) {
+      display: flex;
+      width: 50.625vw;
+      height: 19.514vw;
+      margin: 18.056% 0;
+      border-radius: 0.6945vw;
+    }
+
+    &-bg {
+      width: 100%;
+      height: 38.835%;
+      background-image: url("/images/drawers.jpg");
+      background-repeat: no-repeat;
+      background-position: 10% 30%;
+      background-size: cover;
+      border-radius: 4vw 4vw 0 0;
+      @media (min-width: 650px) {
+        width: 107.09%;
+        height: 100%;
+        background-position: left;
+        border-radius: 0.6945vw 0 0 0.6945vw;
+      }
+    }
+
+    &-text {
+      padding: 12.845% 9.79% 6.12%;
+      @media (min-width: 650px) {
+        padding: 5.35% 5.487% 4.39%;
+      }
+
+      > h1 {
+        color: $VeryDarkGrayishBlue;
+        font-size: 4.4vw;
+        margin-bottom: 7.99%;
+        font-weight: 700;
+        @media (min-width: 650px) {
+          font-size: 1.4vw;
+          margin-bottom: 5.893%;
+        }
+      }
+
+      > p {
+        color: $DesaturatedDarkBlue;
+        font-weight: 500;
+        font-size: 3.54vw;
+        margin-bottom: 13.66%;
+        @media (min-width: 650px) {
+          font-size: 0.9vw;
+          margin-bottom: 8.25%;
+        }
+      }
+
+      .user {
+        .profile {
+          > img {
+            width: 16.8%;
+            height: 16.8%;
+            border-radius: 50%;
+            @media (min-width: 650px) {
+              width: 13.46%;
+              height: 13.46%;
+            }
+          }
+
+          .name {
+            margin-left: 7.16%;
+            > p {
+              font-size: 3.731vw;
+              color: $VeryDarkGrayishBlue;
+              font-weight: 700;
+
+              @media (min-width: 650px) {
+                font-size: 0.973vw;
+              }
+            }
+
+            > span {
+              font-size: 3.731vw;
+              color: $DesaturatedDarkBlue;
+              font-weight: 500;
+
+              @media (min-width: 650px) {
+                font-size: 0.764vw;
+              }
+            }
+          }
+        }
+        .share {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10.973vw;
+          height: 8.53vw;
+          background-color: $LightGrayishBlue;
+          color: $DesaturatedDarkBlue;
+          border-radius: 50%;
+          cursor: pointer;
+          @media (min-width: 650px) {
+            width: 2.223vw;
+            height: 2.223vw;
+          }
+          > i {
+            font-size: 4vw;
+            @media (min-width: 650px) {
+              font-size: 1.042vw;
+            }
+          }
+        }
+
+        .share-click{
+          background-color: $VeryDarkGrayishBlue;
+          color: white;
+        }
+      }
+    }
+    
+    .social-links {
+      visibility: hidden;
+      justify-content: space-between;
+      width: 100%;
+      height: 14%;
+      background-color: $VeryDarkGrayishBlue;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 0 4vw 4vw;
+      padding: 0 9.79%;
+      
+      @media (min-width: 650px) {
+        justify-content: center;
+        width: 34.294%;
+        height: 19.573%;
+        border-radius: 0.695vw;
+        left: 75%;
+        bottom: 32%;
+        padding: 0;
+        &::after {
+          position: absolute;
+          content: "";
+          border: 1vw solid transparent;
+          border-top-color: $VeryDarkGrayishBlue;
+          bottom: -51%;
+        }
+      }
+      .links {
+        > p {
+          font-size: 3.464vw;
+          color: #9eafc2;
+          letter-spacing: 1.333vw;
+          @media (min-width: 650px) {
+            font-size: 0.8vw;
+            letter-spacing: 0.5vw;
+          }
+        }
+
+        > img {
+          width: 6vw;
+          margin: 0 1.6vw;
+          @media (min-width: 650px) {
+            width: 16%;
+            margin: 0 0.6vw;
+          }
+        }
+      }
+      .share-click-o {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8.5vw;
+        height: 8.53vw;
+        background-color: $DesaturatedDarkBlue;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        @media (min-width: 650px) {
+          display: none;
+        }
+        > i {
+          font-size: 4vw;
+        }
+      }
+    }
+    .social-links-click{
+      visibility: visible;
+    }
+  }
+}
